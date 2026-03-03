@@ -1,0 +1,353 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* color: rgb(9, 9, 88); */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    /* align-items: center; */
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.footer {
+    width: 98.7vw;
+    display: block;
+    overflow: hidden;
+    padding: 20px 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #221f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.footer-content {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+.footer-content .col{
+    text-align: center;
+    font-size: small;
+    color: rgb(242, 242, 248);
+    background-color: #c7c4c1;
+    box-shadow: 0px 0px 15px #a19b9b;
+}
+
+.box {
+    background-color: #dbd0bf;
+    /* display: grid; */
+    justify-content: center;
+    align-items: center; 
+    color: #5c5955;
+    padding: 0.5rem;
+    margin: 0 5rem;
+    box-shadow: 20px 20px 100px 2rem;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 15px #7c7a7a;
+    border-radius: 15px;
+}
+
+.container .row {
+    box-shadow: 0px 0px 15px #7c7a7a;
+    border-radius: 15px;
+}
+
+.container .col {
+    text-align: center;
+    font-size: small;
+    color: rgb(9, 9, 88);
+    background-color: #ebe4de;
+}
+
+.container img {
+    max-height: fit-content;
+}
+
+.paralle-image {
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/projects/Wimpy-Galleria-before-150x150.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -2px -2px 15px #000000;
+    border-radius: 15px;
+}
+
+.parallex-content {
+    text-align: center;
+    padding: 20px;
+    line-height: 25px;
+    color: rgb(9, 9, 88);
+    background-color: #dbd0bf;
+    box-shadow: 0px 0px 15px #000000;
+    height: 220px;
+    width: 400px;
+    opacity: 0.85;
+}
+
+.paralle-image-second {
+    padding-bottom: 0;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/projects/Debonairs-13-1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -2px -2px 15px #000000;
+    border-radius: 15px;
+}
+
+.parallex-content-second {
+    text-align: center;
+    padding: 20px;
+    line-height: 25px;
+    color: rgb(9, 9, 88);
+    background-color: #dbd0bf;
+    box-shadow: 0px 0px 15px #000000;
+    height: 480px;
+    width: 400px;
+    opacity: 0.8;
+ }
+
+button {
+    background-color: rgb(9, 9, 88);
+    font-style: oblique;
+    font-size: larger;
+    color: #ccc8c3;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider .carousel {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    transition-delay: 2s ease;
+}
+
+#slider .carousel img {
+    width: 20%;
+    float: left;
+    border-radius: 15px;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider .carousel {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    transition-delay: 2s ease;
+}
+
+#slider .carousel img {
+    width: 20%;
+    float: left;
+    border-radius: 15px;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+
+}
+
+
+.slide-card {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.slide-card {
+    background-image: url(images/projects/Pool-16-1.jpeg);
+}
+
+.hi-slide {
+    position: relative;
+    width: 750px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #000000;
+    color: #c7c4c1;
+    transition: all 0.4s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+    opacity: 1;
+    background-color: #a19b9b;
+} 
+
+.hi-slide .hi-prev {
+    left: -50px;
+}
+
+.hi-slide .hi-prev::before {
+    content: '<';
+}
+
+.hi-slide .hi-next {
+    right: -50px;
+}
+
+.hi-slide .hi-next::before {
+    content: '>';
+}
+
+.hi-slide > ul {
+    list-style: none;
+    position: relative;
+    width: 750px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.hi-slide > ul > li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid #c7c4c1;
+    cursor: pointer;
+    background-color: #333333;
+}
+
+.hi-slide > ul > li > img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
