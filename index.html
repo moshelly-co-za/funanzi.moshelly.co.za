@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funzanzi - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="assets/carousel.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container my-4">
+  <!-- Home section (from home_sect.php) -->
+  <section class="home-section">
+    <div class="box mb-4">
+      <div class="image mb-3"><img src="images/img1.jpeg" alt="hero"></div>
+      <div class="row g-3">
+        <div class="col-md-4 card p-3"><h5>Construction Services</h5><p>We specialize in Residential and Commercial construction work. We can build from scratch, rebuild existing or revamps</p></div>
+        <div class="col-md-4 card p-3"><h5>Tiling</h5><p>Our tiler has 15+ years experience in residential and commercial tiling.</p></div>
+        <div class="col-md-4 card p-3"><h5>Plumbing</h5><p>Qualified plumber with 29 years experience. Geyser install & full plumbing services.</p></div>
+      </div>
+
+      <div class="row g-3 mt-3">
+        <div class="col-md-4 card p-3"><h5>Roofing</h5><p>Any kind of roofing on houses and buildings as well as car ports.</p></div>
+        <div class="col-md-4 card p-3"><h5>Painting</h5><p>Interior & exterior painting, roof painting, waterproofing.</p></div>
+        <div class="col-md-4 card p-3"><h5>Consultation</h5><p>Free quotation and consultation.</p></div>
+      </div>
+
+      <div class="text-center mt-4">
+        <h5 class="accent-blue">Construction Services</h5>
+        <p class="accent-blue">Creating quality urban lifestyles, building stronger communities.</p>
+          <!-- Simple vanilla JS carousel -->
+          <div class="simple-carousel mx-auto">
+              <div class="slides">
+                <div class="slide active"><img src="images/projects/Barbershop-after-1.jpeg" alt="p1"></div>
+                <div class="slide"><img src="images/projects/Wimpy-Galleria.jpeg" alt="p2"></div>
+                <div class="slide"><img src="images/projects/Pool-16-1.jpeg" alt="p3"></div>
+                <div class="slide"><img src="images/projects/Debonairs-13-1.jpeg" alt="p4"></div>
+              </div>
+              <button class="carousel-btn prev btn btn-outline-secondary position-absolute start-0 top-50 translate-middle-y" aria-label="Previous">‹</button>
+              <button class="carousel-btn next btn btn-outline-secondary position-absolute end-0 top-50 translate-middle-y" aria-label="Next">›</button>
+              <div class="carousel-dots mt-2 d-flex justify-content-center"></div>
+            </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer bg-light pt-3">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-3 footer-col"><iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d439693.10983209655!2d30.567795000000004!3d-30.574654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef621aed143460d%3A0x86b92784589a76a9!2sFunzanzi%20Business%20Park!5e0!3m2!1sen!2sus!4v1697551536669!5m2!1sen!2sus" width="100%" height="180" loading="lazy"></iframe></div>
+      <div class="col-md-3 footer-col"><h5>Get In Touch</h5><p>73 Aubrey rd, Hibberdene, KZN<br>083 228 6830 / 039 699 1052<br>chris@funzanzi.co.za</p></div>
+      <div class="col-md-3 text-center footer-col"><h5>Menu</h5><ul class="list-unstyled"><li><a href="index.html">HOME</a></li><li><a href="about.html">ABOUT</a></li><li><a href="projects.html">PROJECTS</a></li><li><a href="contact.html">CONTACT</a></li></ul></div>
+      <div class="col-md-3 footer-col text-center"><img class="logo-img" src="images/logo.jpg" alt="logo"></div>
+    </div>
+  </div>
+  <div class="text-center bg-dark text-white py-2 mt-2">
+    <a href="mailto:chris@funzanzi.co.za" class="text-white me-2"><i class="bi bi-envelope-fill"></i></a>
+    <a href="https://www.youtube.com/@maintenancehibberdene4722/videos" class="text-white me-2"><i class="bi bi-youtube"></i></a>
+    <a href="https://www.instagram.com/fuzanzi/" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+    <a href="https://web.facebook.com/funzanziprojects/" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+    <a href="https://twitter.com/FullPaints" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+    <p class="mb-0">copyright &copy; All Rights Reserved 2023 - designed by Moshelly Els</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/carousel.js"></script>
+</body>
+</html>

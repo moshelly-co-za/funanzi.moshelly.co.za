@@ -64,6 +64,18 @@
     border-radius: 15px;
 }
 
+/* Project-specific small overrides moved from inline styles */
+.navbar-brand img{height:48px}
+.accent-blue{color:#022b59}
+.footer .footer-col{background:#c7c4c1}
+.footer .map-embed{border:0}
+.footer .logo-img{max-height:80px}
+
+/* Thumbnail helpers used on projects page */
+.thumb{display:block;margin-left:auto;margin-right:auto;max-width:100%;height:auto}
+.thumb-150{max-height:150px}
+.thumb-200{max-height:200px}
+
 .container .row {
     box-shadow: 0px 0px 15px #7c7a7a;
     border-radius: 15px;
@@ -263,91 +275,58 @@ button {
 }
 
 
+/* Responsive slide-card and hi-slide: use flexible layout instead of fixed absolute positioning */
 .slide-card {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-    background-attachment: fixed;
+    overflow: hidden;
     background-size: cover;
-}
-
-.slide-card {
-    background-image: url(images/projects/Pool-16-1.jpeg);
+    padding: 1rem 0;
 }
 
 .hi-slide {
     position: relative;
-    width: 750px;
-    height: 292px;
-    border-radius: 50px;
-    margin: 115px auto 0;
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 .hi-slide .hi-next,
 .hi-slide .hi-prev {
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    background-color: #000000;
-    color: #c7c4c1;
-    transition: all 0.4s;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.hi-slide .hi-next:hover,
-.hi-slide .hi-prev:hover {
-    opacity: 1;
-    background-color: #a19b9b;
-} 
-
-.hi-slide .hi-prev {
-    left: -50px;
-}
-
-.hi-slide .hi-prev::before {
-    content: '<';
-}
-
-.hi-slide .hi-next {
-    right: -50px;
-}
-
-.hi-slide .hi-next::before {
-    content: '>';
+    display: none; /* keep markup but hide old JS controls if present */
 }
 
 .hi-slide > ul {
     list-style: none;
-    position: relative;
-    width: 750px;
-    height: 292px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    align-items: stretch;
 }
 
 .hi-slide > ul > li {
     overflow: hidden;
-    position: absolute;
-    z-index: 0;
-    left: 377px;
-    top: 147px;
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 3px solid #c7c4c1;
-    cursor: pointer;
-    background-color: #333333;
+    position: relative;
+    width: calc(33.333% - 8px);
+    min-width: 180px;
+    border: 0;
+    background-color: transparent;
 }
 
 .hi-slide > ul > li > img {
     width: 100%;
-    height: 100%;
-    background-position: center;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+  .hi-slide > ul > li{ width: calc(50% - 8px); }
+}
+
+@media (max-width: 480px){
+  .hi-slide > ul > li{ width: 100%; }
 }
